@@ -1,6 +1,5 @@
 // pages/contact.tsx
 import Head from 'next/head';
-import styles from '../CSS/Contact.module.css';
 
 export default function Contact() {
   return (
