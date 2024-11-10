@@ -1,25 +1,24 @@
 // components/Footer.tsx
 import Link from 'next/link';
-import styles from '../CSS/Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        <h1 className={styles.logo}>
-          <Link href="/">My FancyWebsite</Link>
+    <footer className="bg-gray-800 text-gray-100 py-8 text-center">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-6 md:flex-row md:justify-between md:px-8">
+        <h1 className="text-lg font-bold text-blue-600">
+          <Link href="/" className='text-inherit no-underline'>My FancyWebsite</Link>
         </h1>
-        <nav className={styles.links}>
-          <Link href="/" className={styles.link}>Home</Link>
-          <Link href="/about" className={styles.link}>About</Link>
-          <Link href="/contact" className={styles.link}>Contact</Link>
+        <nav className="flex gap-6">
+          <Link href="/" className="text-gray-100 font-medium transition-colors duration-300 hover:text-blue-600 no-underline">Home</Link>
+          <Link href="/about" className="text-gray-100 font-medium transition-colors duration-300 hover:text-blue-600 no-underline">About</Link>
+          <Link href="/contact" className="text-gray-100 font-medium transition-colors duration-300 hover:text-blue-600 no-underline">Contact</Link>
         </nav>
-        <div className={styles.socials}>
-          <a href="#" className={styles.socialIcon}>Twitter</a>
-          <a href="#" className={styles.socialIcon}>LinkedIn</a>
-          <a href="#" className={styles.socialIcon}>GitHub</a>
+        <div className="flex gap-4">
+          <a href="#" className="text-gray-100 transition-colors duration-300 hover:text-blue-600 no-underline">Twitter</a>
+          <a href="#" className="text-gray-100 transition-colors duration-300 hover:text-blue-600 no-underline">LinkedIn</a>
+          <a href="#" className="text-gray-100 transition-colors duration-300 hover:text-blue-600 no-underline">GitHub</a>
         </div>
-        <p className={styles.copyright}>© {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+        <p className="text-sm text-gray-400">© {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
       </div>
     </footer>
   );
