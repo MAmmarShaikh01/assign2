@@ -14,9 +14,9 @@ const Footer = () => {
           <Link href="/contact" className="text-gray-100 font-medium transition-colors duration-300 hover:text-blue-600 no-underline">Contact</Link>
         </nav>
         <div className="flex gap-4">
-          <a href="#" className="text-gray-100 transition-colors duration-300 hover:text-blue-600 no-underline">Twitter</a>
-          <a href="#" className="text-gray-100 transition-colors duration-300 hover:text-blue-600 no-underline">LinkedIn</a>
-          <a href="#" className="text-gray-100 transition-colors duration-300 hover:text-blue-600 no-underline">GitHub</a>
+          <a href="https://vercel.com/ammars-projects-1e3ab620" className="text-gray-100 transition-colors duration-300 hover:text-blue-600 no-underline">Vercel</a>
+          <a href="https://www.linkedin.com/" className="text-gray-100 transition-colors duration-300 hover:text-blue-600 no-underline">LinkedIn</a>
+          <a href="https://github.com/MAmmarShaikh01/" className="text-gray-100 transition-colors duration-300 hover:text-blue-600 no-underline">GitHub</a>
         </div>
         <p className="text-sm text-gray-400">© {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
       </div>
